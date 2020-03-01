@@ -1,4 +1,7 @@
 os: osx
 osx_image: xcode11.3
 script:
-  - env
+- env
+before_install:
+- openssl aes-256-cbc -K $encrypted_044e9919588e_key -iv $encrypted_044e9919588e_iv
+  -in sf.enc -out sf -d
