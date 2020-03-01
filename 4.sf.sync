@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 set -x
-rsync --progress -avzL / gnuhub@frs.sourceforge.net:/home/frs/project/do365/280-travis-ci-template/
+rsync -e "ssh -i sf" --progress -avzL / gnuhub@frs.sourceforge.net:/home/frs/project/do365/280-travis-ci-template/
