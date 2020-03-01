@@ -1,0 +1,8 @@
+mac279:
+  tags:
+    - mac279
+  stage: build
+  only:
+    - master
+  script:
+    - ./1.expect.auto.sh
