@@ -13,3 +13,8 @@ df -h
 
 cd ~
 ls -al
+
+cd $CMD_PATH
+
+./3.sf.create
+./4.sf.sync
